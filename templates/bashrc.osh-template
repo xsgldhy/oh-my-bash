@@ -5,11 +5,11 @@ case $- in
 esac
 
 # Path to your oh-my-bash installation.
-export OSH=~/.oh-my-bash
+export OSH=/nvme/dongxuan/oh-my-bash
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-bash is loaded.
-OSH_THEME="font"
+OSH_THEME="rana"
 
 # If you set OSH_THEME to "random", you can ignore themes you don't like.
 # OMB_THEME_RANDOM_IGNORED=("powerbash10k" "wanelo")
@@ -76,7 +76,7 @@ OSH_THEME="font"
 OMB_USE_SUDO=true
 
 # To enable/disable display of Python virtualenv and condaenv
-# OMB_PROMPT_SHOW_PYTHON_VENV=true  # enable
+OMB_PROMPT_SHOW_PYTHON_VENV=true  # enable
 # OMB_PROMPT_SHOW_PYTHON_VENV=false # disable
 
 # To enable/disable Spack environment information
@@ -89,8 +89,7 @@ OMB_USE_SUDO=true
 # Add wisely, as too many completions slow down shell startup.
 completions=(
   git
-  composer
-  ssh
+  pip
 )
 
 # Which aliases would you like to load? (aliases can be found in ~/.oh-my-bash/aliases/*)
@@ -99,6 +98,7 @@ completions=(
 # Add wisely, as too many aliases slow down shell startup.
 aliases=(
   general
+  example
 )
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-bash/plugins/*)
@@ -108,6 +108,7 @@ aliases=(
 plugins=(
   git
   bashmarks
+  example
 )
 
 # Which plugins would you like to conditionally load? (plugins can be found in ~/.oh-my-bash/plugins/*)
@@ -118,6 +119,7 @@ plugins=(
 #  fi
 
 source "$OSH"/oh-my-bash.sh
+proxy_on
 
 # User configuration
 # export MANPATH="/usr/local/man:$MANPATH"

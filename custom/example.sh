@@ -8,3 +8,4 @@
 # brainstormr=~/workspace/projects/m2/brainstormr
 # cd $brainstormr
 #
+export HF_ENDPOINT="https://hf-mirror.com/"
