@@ -132,7 +132,7 @@ to keep the repository size small. The filename should be `<theme
 name>-dark.png` or `<theme name>-light.png` depending on the dark or light
 background of the terminal used to make the image.  The image should be
 unscaled screen shot of a terminal.  If the terminal size is larger than the
-expecte image size, the image should be clipped instead of being resized and
+expected image size, the image should be clipped instead of being resized and
 downscaled.
 
 When you add a new theme, please also update
@@ -149,7 +149,7 @@ it is worth including in Oh My Bash, you will have to find testers to +1 your
 PR.
 
 When you add a new plugin, please also update
-[plugins/README.md](https://github.com/ohmybash/oh-my-bash/blob/master/plugins/README.md)
+[plugins/README.md](https://github.com/ohmybash/oh-my-bash/blob/master/plugins/README.md).
 
 ### Copyright and responsibility
 
@@ -220,7 +220,8 @@ oh-my-bash have the form `OMB_*`.
 * The settings for a specific plugin has the form `OMB_PLUGIN_${plugin_name^^}_${config^^}`
 * The settings for a specific theme has the form `OMB_THEME_${theme_name^^}_${config^^}`
 
-Internal global variables put into global variables used by oh-my-bash has the form `_omb_*`
+Internal global variables put into global variables used by oh-my-bash has the
+form `_omb_*`.
 
 * The internal variables defined by libraries has the form `_omb_${namespace}_${varname}`
 * The internal variables used by a specific plugin has the form `_omb_plugin_${plugin_name}_${varname}`
